@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+RUN apk add --no-cache \
+	wget tar make cmake clang clang-dev make gcc g++ libc-dev linux-headers
 
 ENV OSMIUM_VERSION 2.13.1
 ENV OSMIUM_TOOL_VERSION 1.7.1
